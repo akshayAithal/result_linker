@@ -1,0 +1,13 @@
+.logo {
+    background-image: url("../images/gkn_driveline.png"); 
+    background-repeat: no-repeat;
+    background-position: top 5px left 53px;
+    background-attachment: fixed;
+    width: 230px;
+    height: 50px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    float: left;
+}

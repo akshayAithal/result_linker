@@ -1,0 +1,9 @@
+{
+    "public_files": [
+        "svn://dllohsr222/XT4210/apps/applications/result_linker/test_folder/1_d.txt",
+        "svn://dllohsr222/XT4210/apps/applications/result_linker/test_folder/1_b/2_c/3_c.txt"
+    ],
+    "public_folders": [
+        "svn://dllohsr222/XT4210/apps/applications/result_linker/test_folder/1_b/2_b"
+    ]
+}

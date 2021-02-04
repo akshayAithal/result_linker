@@ -1,0 +1,15 @@
+[Unit]
+Description=Result Linker Application
+
+[Service]
+Type=simple
+User=vinay
+PermissionsStartOnly=True
+WorkingDirectory=/home/akshay/scripts/deploy/result_linker
+ExecStart=/home/akshay/scripts/deploy/result_linker/env/bin/python /home/akshay/scripts/deploy/result_linker/serve.py
+Restart=on-failure
+RuntimeDirectoryMode=755
+# Other Restart options: or always, on-abort, etc
+
+[Install]
+WantedBy=multi-user.target

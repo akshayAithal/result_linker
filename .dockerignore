@@ -1,0 +1,5 @@
+# Add files/folder references here in order to be ignored for initial docker build
+.svn
+instance
+migrations
+**/*.log

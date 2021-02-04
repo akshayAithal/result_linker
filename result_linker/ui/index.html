@@ -1,0 +1,42 @@
+<!-- index.hml -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- Latest compiled and minified bootstrap CSS -->
+        <link rel="icon" href="result_linker/assets/favicon.ico" />
+        <link rel="stylesheet" href="result_linker/assets/css/body.css" />
+        <title>Eureka - SDM Browser</title>
+    </head>
+
+    <body>
+        <div id="content" />
+        <script type="text/javascript">
+        function isIE() {
+            ua = navigator.userAgent;
+            /* MSIE used to detect old browsers and Trident used to newer ones*/
+            var is_ie = ua.indexOf("MSIE ") > -1 || ua.indexOf("Trident/") > -1;
+            return is_ie; 
+        }
+        function loadJS(file) {
+            // DOM: Create the script element
+            var jsElm = document.createElement("script");
+            // set the type attribute
+            jsElm.type = "application/javascript";
+            // make the script element load file
+            jsElm.src = file;
+            // finally insert the element to the body element in order to load the script
+            document.body.appendChild(jsElm);
+        }
+        /* Create an alert to show if the browser is IE or not */
+        if (isIE()){
+            document.body.innerHTML = document.body.innerHTML + "<p>This app does not work in Internet Explorer.Please use modern browsers like Microsoft Edge! If not installed please contact your <a href=\"http://itservicecenter.gknautomotive.com/\">IT Centre</a><p>";
+            alert('This app does not work in Internet Explorer. Please use modern browsers like Microsoft Edge! If not installed please contact your IT');
+        }
+        else{
+            loadJS("result_linker/assets/bundle.js")
+        }
+        </script>
+    </body>
+
+</html>
+ 
